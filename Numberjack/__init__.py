@@ -3644,6 +3644,8 @@ class NBJ_STD_Solver(object):
         else:
             if param is None:
                 function()
+            elif type(param)==tuple:
+                function(*param)
             else:
                 function(param)
 

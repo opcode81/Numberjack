@@ -343,7 +343,7 @@ def run_solve(model, output_vars, param):
 ##        uncomment the following lines to save the problem in wcsp format
 #        solver.setOption('nopre')
 #        solver.setOption('lcLevel',0)
-#        solver.setOption("dumpWCSP",2)
+#        solver.setOption("dumpWCSP",(2, "problem.wcsp"))
     if param['solver'] == 'Mistral':
         solver.solveAndRestart(param['restart'], param['base'], param['factor'])
     else:
